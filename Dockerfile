@@ -9,5 +9,3 @@ RUN pip install gunicorn
 
 
 ENTRYPOINT ["gunicorn", "-b", ":8080", "-e", "[JWT_SECRET=mysecret, LOG_LEVEL=INFO]", "main:APP"]
-
-
